@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="arquivos/contactMasterData_v1.16_ptbr.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		var storeName = "{storename}"; //Indica o nome da conta utilizada na API do MasterData
+		var dataEntity = "CO"; //Indica a sigla da entidade de dados utilizada na API do MasterData
+		var htmlElementId = "contactForm"; //Indica o ID do elemento HTML que receberá o formulário
+		var messageLoading = "Carregando..."; //Mensagem de carregamento do formulário (ao salvar)
+		var messageValidation = "Preencha corretamente todos os campos obrigatórios do formulário."; //Mensagem de validação de formulário
+		var messageSuccess = "Contato realizado com sucesso. Em breve nossa equipe entrará em contato com você. Obrigado."; //Mensagem de sucesso
+		var messageError = "Algum erro aconteceu. Tente novamente mais tarde."; //Mensagem de erro
+		
+		FormCreate(storeName, dataEntity, htmlElementId, messageLoading, messageValidation, messageSuccess, messageError);
+	});
+</script>
+</head>
+<body>
+	<div id="contactForm"></div>
+</body>
+</html>
