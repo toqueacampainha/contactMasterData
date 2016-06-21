@@ -7,13 +7,13 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		
-		var storeName = "{storename}"; //Indica o nome da conta utilizada na API do MasterData
+		var storeName = "toqueacampainha"; //Indica o nome da conta utilizada na API do MasterData
 		var dataEntity = "CO"; //Indica a sigla da entidade de dados utilizada na API do MasterData
 		var htmlElementId = "contactForm"; //Indica o ID do elemento HTML que receberá o formulário
 		var messageLoading = "Carregando..."; //Mensagem de carregamento do formulário (ao salvar)
-		var messageValidation = "Preencha corretamente todos os campos obrigatórios do formulário."; //Mensagem de validação de formulário
-		var messageSuccess = "Contato realizado com sucesso. Em breve nossa equipe entrará em contato com você. Obrigado."; //Mensagem de sucesso
-		var messageError = "Algum erro aconteceu. Tente novamente mais tarde."; //Mensagem de erro
+		var messageValidation = "Sua mensagem não foi enviada."; //Mensagem de validação de formulário
+		var messageSuccess = "Mensagem enviada com sucesso."; //Mensagem de sucesso
+		var messageError = "Sua mensagem não foi enviada."; //Mensagem de erro
 		
 		FormCreate(storeName, dataEntity, htmlElementId, messageLoading, messageValidation, messageSuccess, messageError);
 	});
